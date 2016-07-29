@@ -2,16 +2,16 @@ angular.module('errorParserModule', ['pascalprecht.translate'])
     .factory('serviceErrorParser', ['$filter', function ($filter) {
         var o = {};
 
-        o.getErrorMessage = function (reason) {
-            var errorCode = reason.code;
-            var errorMessage = $filter('translate')(errorCode);
-            if (errorMessage === errorCode || !errorMessage) {
-                errorMessage = reason.message;
+        o.getErrorMessage = function (reason, defaultValue) {
+            console.error(reason);
+
+            var errorMessage = reason.message;
+
+            if (!errorMessage) {
+                errorMessage = defaultValue;
             }
 
-            if (!errorMessage && typeof reason === 'string') {
-                errorMessage = reason;
-            }
+            errorMessage = $filter('translate')(errorMessage);
 
             return errorMessage;
         };
