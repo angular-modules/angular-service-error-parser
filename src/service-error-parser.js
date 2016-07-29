@@ -1,4 +1,4 @@
-angular.module('errorParserModule', [])
+angular.module('errorParserModule', ['pascalprecht.translate'])
     .factory('serviceErrorParser', ['$filter', function ($filter) {
         var o = {};
 
