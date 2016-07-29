@@ -1,12 +1,12 @@
 {
-  "name": "angular-validation-patterns",
-  "homepage": "https://github.com/Jeff-Tian/angular-validation-patterns",
+  "name": "angular-service-error-parser",
+  "description": "",
+  "main": "index.js",
   "authors": [
     "田杰 <jefftian@hcdlearning.com>"
   ],
-  "description": "",
-  "main": "",
-  "license": "MIT",
+  "license": "ISC",
+  "homepage": "https://github.com/angular-modules/angular-service-error-parser",
   "ignore": [
     "**/.*",
     "node_modules",
