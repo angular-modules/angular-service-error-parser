@@ -8,7 +8,7 @@ angular.module('errorParserModule', ['pascalprecht.translate'])
             var errorMessage = reason.message;
 
             if (!errorMessage) {
-                errorMessage = defaultValue;
+                errorMessage = defaultValue || reason;
             }
 
             errorMessage = $filter('translate')(errorMessage);
