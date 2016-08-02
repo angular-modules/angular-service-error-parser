@@ -11,7 +11,11 @@ angular.module('errorParserModule', ['pascalprecht.translate'])
                 errorMessage = defaultValue || reason;
             }
 
-            errorMessage = $filter('translate')(errorMessage);
+            if (typeof errorMessage === 'string') {
+                errorMessage = $filter('translate')(errorMessage);
+            } else {
+                errorMessage = $filter('translate')(JSON.stringify(errorMessage));
+            }
 
             return errorMessage;
         };
