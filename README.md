@@ -1,4 +1,10 @@
 ## Install
+ - Via npm
+```
+npm install angular-service-error-parser --save
+```
+
+ - Via bower
 ```
 bower install angular-service-error-parser --save
 ```
