@@ -3,7 +3,9 @@
   "version": "0.2.1",
   "description": "``` bower install angular-service-error-parser --save ```",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "angular-translate": "^2.11.1"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
