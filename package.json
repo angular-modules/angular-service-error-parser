@@ -1,6 +1,6 @@
 {
   "name": "angular-service-error-parser",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "``` bower install angular-service-error-parser --save ```",
   "main": "gulpfile.js",
   "dependencies": {
